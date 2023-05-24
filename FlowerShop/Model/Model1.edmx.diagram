@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6705b4ab1206456f9f27efcfeb3a3a58" Name="Diagram1">
+        <EntityTypeShape EntityType="FlowerShopModel.AdminOrder" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlowerShopModel.Client" Width="1.5" PointX="3.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlowerShopModel.ClientOrder" Width="1.5" PointX="6" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlowerShopModel.Flower" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlowerShopModel.ListAdminOrder" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlowerShopModel.ListClientOrder" Width="1.5" PointX="8.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlowerShopModel.Provider" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlowerShopModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="FlowerShopModel.FK_ListAdminOrder_AdminOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="FlowerShopModel.FK_ClientOrder_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="FlowerShopModel.FK_ListClientOrder_ClientOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="FlowerShopModel.FK_Flower_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="FlowerShopModel.FK_ListAdminOrder_Flower" ManuallyRouted="false" />
+        <AssociationConnector Association="FlowerShopModel.FK_ListClientOrder_Flower" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
