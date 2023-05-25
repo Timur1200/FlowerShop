@@ -89,7 +89,13 @@ namespace FlowerShop.Pages.ClientsOrders
         private void WordClick(object sender, RoutedEventArgs e)
         {
             if (MyService.CheckDataGrid(DGrid)) {
+                
                 ClientOrder clientOrder = DGrid.SelectedItem as ClientOrder;
+                if (clientOrder.Status != 2)
+                {
+                    MessageBox.Show("Вывести на печать можно только завершенные заказы");
+                    return;
+                }
                 StringBuilder sb = new StringBuilder();
                 var items = FlowerShopEntities.GetContext().ListClientOrder.Where(q => q.ClientOrderId == clientOrder.Id).ToList();
                 foreach(var item in items)
