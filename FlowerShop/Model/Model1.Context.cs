@@ -27,11 +27,11 @@ namespace FlowerShop.Model
     
         public virtual DbSet<AdminOrder> AdminOrder { get; set; }
         public virtual DbSet<Client> Client { get; set; }
-        public virtual DbSet<ClientOrder> ClientOrder { get; set; }
-        public virtual DbSet<Flower> Flower { get; set; }
         public virtual DbSet<ListAdminOrder> ListAdminOrder { get; set; }
-        public virtual DbSet<ListClientOrder> ListClientOrder { get; set; }
         public virtual DbSet<Provider> Provider { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<Flower> Flower { get; set; }
+        public virtual DbSet<ClientOrder> ClientOrder { get; set; }
+        public virtual DbSet<ListClientOrder> ListClientOrder { get; set; }
     }
 }

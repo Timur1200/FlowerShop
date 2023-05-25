@@ -23,6 +23,7 @@ namespace FlowerShop
         public LoginWindow()
         {
             InitializeComponent();
+            
         }
 
         private void LoginClick(object sender, RoutedEventArgs e)
@@ -39,7 +40,7 @@ namespace FlowerShop
                     return;
                 }
             }
-            if (LoginTextBox.Text == "q" && PassBox.Password == "q")
+            if (LoginTextBox.Text == "1" && PassBox.Password == "1")
             {
                 MainWindow mainWindow = new MainWindow(true);
                 mainWindow.Show();
@@ -47,6 +48,13 @@ namespace FlowerShop
                 return;
             }
             MessageBox.Show("Пользователь не найден!");
+        }
+
+        private void RegClick(object sender, RoutedEventArgs e)
+        {
+            RegisterWindow registerWindow = new RegisterWindow();
+            registerWindow.Show();
+            this.Hide();
         }
     }
 }

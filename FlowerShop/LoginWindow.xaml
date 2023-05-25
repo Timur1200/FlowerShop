@@ -6,7 +6,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
         xmlns:local="clr-namespace:FlowerShop"
         mc:Ignorable="d"
-        Title="Войти" Height="600" Width="1080">
+        Title="Войти"  WindowStartupLocation="CenterScreen"  Height="600" Width="1080">
     <Grid Background="#FFDADADA">
         <Border Margin="15" MinWidth="400" Background="White" VerticalAlignment="Center" Padding="30" CornerRadius="10" MaxWidth="800">
             <Border.Effect>
@@ -14,10 +14,11 @@
             </Border.Effect>
             <StackPanel>
                 <TextBlock Text="Добро пожаловать!" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
-
                 <Grid Margin="0 0 0 20">
+                    <Button Click="RegClick" Content="Регистрация" HorizontalAlignment="Left"/>
                     
                 </Grid>
+                
 
                 <TextBox Name="LoginTextBox" materialDesign:HintAssist.Hint="Телефон" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 5"/>
                 <PasswordBox Name="PassBox" materialDesign:HintAssist.Hint="Пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0 5"/>

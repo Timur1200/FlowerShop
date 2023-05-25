@@ -24,9 +24,9 @@ namespace FlowerShop.Model
         public int Id { get; set; }
         public Nullable<int> ProviderId { get; set; }
         public string Name { get; set; }
-        public Nullable<int> Price { get; set; }
+        public Nullable<double> Price { get; set; }
         public Nullable<int> Count { get; set; }
-        public Nullable<int> Markup { get; set; }
+        public Nullable<double> Markup { get; set; }
         public byte[] Img { get; set; }
     
         public virtual Provider Provider { get; set; }

@@ -8,5 +8,22 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AddEditClientPage">
 
+    <Grid>
+        <ScrollViewer>
+            <StackPanel HorizontalAlignment="Center" Width="400" VerticalAlignment="Center">
+                <TextBlock Text="ФИО" />
+                <TextBox Text="{Binding Fio}" />
+                
+                <TextBlock Text="Телефон" />
+                <TextBox Text="{Binding Phone}" />
+                <TextBlock Text="Пароль" />
+                <TextBox Text="{Binding Password}"/>
+                
+
+                <Button Click="SaveClick" Content="Сохранить" />
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
    
 </Page>

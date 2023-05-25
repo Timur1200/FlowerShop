@@ -18,7 +18,7 @@ namespace FlowerShop.Model
         public Nullable<int> ClientOrderId { get; set; }
         public Nullable<int> FlowerId { get; set; }
         public Nullable<int> Count { get; set; }
-        public Nullable<int> Sum { get; set; }
+        public Nullable<double> Sum { get; set; }
     
         public virtual ClientOrder ClientOrder { get; set; }
         public virtual Flower Flower { get; set; }

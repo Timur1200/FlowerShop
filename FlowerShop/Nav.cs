@@ -14,7 +14,11 @@ namespace FlowerShop
         public static Frame MainFrame { get; set; }
         public static void Back()
         {
-            if (MainFrame.CanGoBack) { MainFrame.GoBack(); }
+            if (MainFrame.CanGoBack) { MainFrame.NavigationService.GoBack(); }
+        }
+        public static void Go(Page p)
+        {
+            MainFrame.Navigate(p);
         }
         public static Client Client { get; set; }
     }
