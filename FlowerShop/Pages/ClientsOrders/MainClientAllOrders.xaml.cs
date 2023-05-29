@@ -29,10 +29,7 @@ namespace FlowerShop.Pages.ClientsOrders
             FilterComboBox.Items.Add("Завершенные");
         }
         private List<ClientOrder> _clientOrder;
-        private void AddClick(object sender, RoutedEventArgs e)
-        {
-
-        }
+      
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
