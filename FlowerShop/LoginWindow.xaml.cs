@@ -40,7 +40,7 @@ namespace FlowerShop
                     return;
                 }
             }
-            if (LoginTextBox.Text == "1" && PassBox.Password == "1")
+            if (LoginTextBox.Text == "+7(111) 111-1111" && PassBox.Password == "1")
             {
                 MainWindow mainWindow = new MainWindow(true);
                 mainWindow.Show();

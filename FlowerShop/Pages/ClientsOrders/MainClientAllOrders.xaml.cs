@@ -108,5 +108,17 @@ namespace FlowerShop.Pages.ClientsOrders
             }
 
         }
+
+        private void SearchDatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (SearchDatePicker.SelectedDate == null)
+            {
+                return;
+            }
+            DateTime dateTime = SearchDatePicker.SelectedDate.Value;
+            var list = _clientOrder.Where(q => q.Date.Value.Year == dateTime.Year && q.Date.Value.Month == dateTime.Month && q.Date.Value.Day == dateTime.Date.Day).ToList();
+            ResultTextBlock.Text = $"Сумма за {dateTime.ToString("d")} составляет {list.Sum(q=>q.Sum)} руб";
+            DGrid.ItemsSource = list;
+        }
     }
 }

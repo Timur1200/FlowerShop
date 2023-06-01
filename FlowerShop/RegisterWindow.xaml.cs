@@ -46,7 +46,7 @@ namespace FlowerShop
                 errors.AppendLine("Пароли не совпадают");
             }
             int i = FlowerShopEntities.GetContext().Client.Where(q => q.Phone == _client.Phone).Count();
-            if (i != 0 || _client.Phone == "1")
+            if (i != 0 || _client.Phone == "+7(111) 111-1111")
             {
                 errors.AppendLine("Номер телефона занят");
             }
